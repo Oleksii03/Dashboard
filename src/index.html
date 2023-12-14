@@ -5,32 +5,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homework 10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./SASS/index.scss">
 </head>
 
 <body>
   <main class="main">
     <aside class="aside">
-      <a href="#" class="logo">
+      <a href="#" class="aside__logo">
         <svg class="logo__img" width="37" height="37">
           <use href="../sprite.svg#icon-logo"></use>
         </svg>
-        Dashboard<span>v.01</span>
+        <div class="logo__text">
+          Dashboard<span>v.01</span>
+        </div>
       </a>
+
       <nav class="menu">
         <ul menu__list>
-          <li>
-            <svg class="logo__img" width="37" height="37">
-              <use href="../sprite.svg#icon-logo"></use>
+          <li menu__item>
+            <svg class="menu__svg" width="24" height="24">
+              <use href="../sprite.svg#icon-key-square"></use>
+            </svg>
+            Dashboard
+            <!-- <svg class="menu__svg" width="16" height="16">
+              <use href="../sprite.svg#icon-arrow-right"></use>
+            </svg> -->
+          </li>
+          <li menu__item>
+            <svg class="menu__svg" width="24" height="24">
+              <use href="../sprite.svg#icon-nav2"></use>
+            </svg>
+            Product
+            <svg class="menu__svg" width="16" height="16">
+              <use href="../sprite.svg#icon-arrow-right"></use>
             </svg>
           </li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li menu__item>
+            <svg class="menu__svg" width="24" height="24">
+              <use href="../sprite.svg#icon-user"></use>
+            </svg>
+            Customers
+            <svg class="menu__svg" width="16" height="16">
+              <use href="../sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </li>
+          <li menu__item>
+            <svg class="menu__svg" width="24" height="24">
+              <use href="../sprite.svg#icon-wallet-money"></use>
+            </svg>
+            Income
+            <svg class="menu__svg" width="16" height="16">
+              <use href="../sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </li>
+          <li menu__item>
+            <svg class="menu__svg" width="24" height="24">
+              <use href="../sprite.svg#icon-discount-shape"></use>
+            </svg>
+            Promote
+            <svg class="menu__svg" width="16" height="16">
+              <use href="../sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </li>
+          <li menu__item>
+            <svg class="menu__svg" width="24" height="24">
+              <use href="../sprite.svg#icon-message-question"></use>
+            </svg>
+            Help
+            <svg class="menu__svg" width="16" height="16">
+              <use href="../sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </li>
         </ul>
       </nav>
+
+      <div class="aside__footer">
+        <img src="../src/image/user.jpg" alt="user">
+        <ul>
+          <li>
+            <p>Evano</p>
+          </li>
+          <li>
+            <p>Project Manager</p>
+          </li>
+        </ul>
+      </div>
+
     </aside>
     <section class="body">
 
