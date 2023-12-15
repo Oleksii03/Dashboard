@@ -83,26 +83,26 @@
 
 .info-customers__body {
   padding-top: 2.5rem;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  justify-content: space-between;
 }
 
 .info-customers__list {
   display: flex;
   flex-direction: column;
 
-  // justify-content: space-between;
-  // align-items: center;
-  // column-gap: auto;
-  // flex-wrap: nowrap;
+  &_btn {
+    align-items: center;
+  }
 }
 
 .customers-info {
+  position: relative;
   padding: 1.25rem 0;
 
   &__btn {
     width: 80px;
-    padding: 0.1688rem 0.75rem;
+    padding: 3px 0.75rem;
     line-height: normal;
     letter-spacing: -0.0088rem;
 
@@ -146,10 +146,65 @@
 }
 
 .customers-info__name {
+  position: relative;
   padding: 1.5rem 0;
   color: #292D32;
 
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.0088rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: block;
+    height: 0.0625rem;
+    width: 240%;
+    background: #EEE;
+  }
+}
+
+
+// ----footer-------------
+.footer {
+  margin-top: 32px;
+  display: flex;
+
+  &__text {
+    color: #B5B7C0;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+  }
+}
+
+.footer-btn__list {
+  margin-left: auto;
+  display: flex;
+  column-gap: 0.75rem;
+}
+
+.footer-btn__link {
+  padding: 0.375rem 0.5625rem;
+
+  color: #404B52;
+
+  font-size: 0.75rem;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: -0.0075rem;
+
+  border-radius: 0.25rem;
+  border: 1px solid #EEE;
+  background: #F5F5F5;
+
+  &_hidden {
+    background-color: transparent;
+    border: none;
+  }
 }
