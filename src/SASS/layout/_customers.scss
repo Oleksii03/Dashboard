@@ -203,8 +203,17 @@
   border: 1px solid #EEE;
   background: #F5F5F5;
 
+  transition: all 200ms linear;
+
   &_hidden {
     background-color: transparent;
-    border: none;
+    border: 1px solid transparent;
+    pointer-events: none;
+  }
+
+  &:hover {
+    border: 1px solid #5932EA;
+    background-color: #5932EA;
+    color: #fff;
   }
 }
