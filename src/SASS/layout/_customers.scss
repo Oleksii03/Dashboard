@@ -104,6 +104,7 @@
 
 
   &__btn {
+    font-size: clamp(0.625rem, 0.264rem + 0.75vw, 0.875rem);
     width: 80px;
     padding: 3px 0.75rem;
     line-height: normal;
@@ -129,6 +130,7 @@
 }
 
 .customers-info__title {
+  font-size: clamp(0.625rem, 0.264rem + 0.75vw, 0.875rem);
   margin-bottom: 0.875rem;
 
   color: #B5B7C0;
@@ -149,7 +151,7 @@
 }
 
 .customers-info__name {
-  font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (1600 - 320)));
+  font-size: clamp(0.625rem, 0.264rem + 0.75vw, 0.875rem);
   position: relative;
   margin: 24px 0;
   color: #292D32;
