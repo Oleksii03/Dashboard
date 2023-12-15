@@ -105,8 +105,8 @@
 
   &__btn {
     font-size: clamp(0.625rem, 0.264rem + 0.75vw, 0.875rem);
-    width: 80px;
-    padding: 3px 0.75rem;
+    width: 5rem;
+    padding: 0.25rem 0.75rem;
     line-height: normal;
     letter-spacing: -0.0088rem;
 
@@ -165,7 +165,7 @@
     transform: translateY(24px);
     display: block;
     height: 0.0625rem;
-    width: 240%;
+    width: 290%;
     background: #EEE;
   }
 }

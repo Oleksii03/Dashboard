@@ -2,7 +2,11 @@
   display: grid;
   height: 100dvh;
 
-  @media (min-width: 1160px) {
+  @media (min-width: 1024px) {
+    grid-template-columns: minmax(auto, 260px) 1fr;
+  }
+
+  @media (min-width: 1280px) {
     grid-template-columns: minmax(auto, 360px) 1fr;
   }
 }
