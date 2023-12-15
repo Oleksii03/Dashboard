@@ -1,0 +1,33 @@
+.mob-menu {
+  @media (max-width: 1024px) {
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 999;
+    box-shadow: inset -6px -1px 4px -4px rgba(0, 0, 0, 0.16);
+
+    transform: translateX(-101%);
+
+    &::after {
+      content: '>';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 20px;
+
+      width: 23px;
+      height: 30px;
+      background-color: rgba(154, 163, 163, 0.432);
+      position: absolute;
+      top: 15%;
+      right: -23px;
+
+      border-radius: 0 50% 50% 0;
+    }
+  }
+}
