@@ -1,5 +1,10 @@
 .aside {
-  display: flex;
+  display: none;
+
+  @media (min-width: 1160px) {
+    display: flex;
+  }
+
   flex-direction: column;
   padding-top: 2.25rem;
   padding-right: 1.75rem;

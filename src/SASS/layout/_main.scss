@@ -1,5 +1,8 @@
 .main {
   display: grid;
-  grid-template-columns: minmax(auto, 360px) 1fr;
   height: 100dvh;
+
+  @media (min-width: 1160px) {
+    grid-template-columns: minmax(auto, 360px) 1fr;
+  }
 }

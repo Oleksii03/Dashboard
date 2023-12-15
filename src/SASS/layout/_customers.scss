@@ -1,5 +1,6 @@
 .customers {
   background-color: #FAFBFF;
+  padding-bottom: 20px;
 }
 
 .customers__title {
@@ -82,6 +83,7 @@
 // ------body--------------------------
 
 .info-customers__body {
+  overflow-x: hidden;
   padding-top: 2.5rem;
   display: flex;
   justify-content: space-between;
@@ -99,6 +101,7 @@
 .customers-info {
   position: relative;
   padding: 1.25rem 0;
+
 
   &__btn {
     width: 80px;
@@ -146,8 +149,9 @@
 }
 
 .customers-info__name {
+  font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (1600 - 320)));
   position: relative;
-  padding: 1.5rem 0;
+  margin: 24px 0;
   color: #292D32;
 
   font-style: normal;
@@ -156,9 +160,7 @@
 
   &::after {
     content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0;
+    transform: translateY(24px);
     display: block;
     height: 0.0625rem;
     width: 240%;
