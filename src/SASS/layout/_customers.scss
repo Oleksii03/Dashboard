@@ -1,6 +1,5 @@
 .customers {
   position: relative;
-  // background-color: #FAFBFF;
   padding-bottom: 1.25rem;
 }
 
@@ -54,6 +53,10 @@
 
 .header-box {
   text-align: center;
+
+  @media (min-width: 550px) {
+    text-align: left;
+  }
 
   &__title {
     color: #000;
