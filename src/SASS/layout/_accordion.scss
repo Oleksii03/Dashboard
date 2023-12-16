@@ -11,13 +11,13 @@
 
 .accordion-item {
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
 }
 
 .accordion-header {
   position: relative;
   padding: 0.625rem;
-  background-color: #f5f5f5;
+  background-color: #FAFBFF;
   cursor: pointer;
 }
 
@@ -67,4 +67,33 @@
   font-style: normal;
   line-height: normal;
   font-size: 0.75rem;
+}
+
+// -------content-------------------
+
+.accordion-content {
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  &__title {
+    color: #b5b7c0;
+    letter-spacing: -.0088rem;
+    font-style: normal;
+    line-height: normal;
+    font-size: 0.75rem;
+  }
+
+  &__text {
+    color: #000000;
+    letter-spacing: -.0088rem;
+    font-style: normal;
+    line-height: normal;
+    font-size: 0.75rem;
+  }
 }
