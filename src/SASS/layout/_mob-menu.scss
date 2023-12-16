@@ -3,6 +3,8 @@
 
   @media (max-width: 1024px) {
     display: flex;
+    // overflow-y: scroll;
+
     width: 270px;
     height: 100dvh;
     position: fixed;
@@ -19,49 +21,62 @@
 
     &__btn {
       position: absolute;
-      top: 80px;
-      right: -35px;
+      top: 5.3125rem;
+      right: -2.125rem;
       background-color: #9197b358;
-      width: 35px;
-      height: 35px;
+      width: 2.1875rem;
+      height: 2.1875rem;
       padding: 0px;
       line-height: 0;
       border-radius: 0 50% 50% 0;
     }
 
     &__icon {
-      position: relative;
-      width: 25px;
-      height: 2px;
-      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: 4px;
-        left: 0;
-        width: 25px;
-        height: 2px;
-        background-color: #000000;
-      }
+      // position: relative;
+      // width: 25px;
+      // height: 2px;
+      // background-color: #000000;
 
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 4px;
-        left: 0;
-        width: 25px;
-        height: 2px;
-        background-color: #000000;
-      }
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   top: 4px;
+      //   left: 0;
+      //   width: 25px;
+      //   height: 2px;
+      //   background-color: #000000;
+      // }
+
+      // &::after {
+      //   content: '';
+      //   position: absolute;
+      //   bottom: 4px;
+      //   left: 0;
+      //   width: 25px;
+      //   height: 2px;
+      //   background-color: #000000;
+      // }
+    }
+
+    &__container {
+      width: 100%;
+      overflow-y: auto;
     }
   }
 
   @media (max-width: 465px) {
-    border-radius: 0 0 20px 0;
+    border-radius: 0 0 0.625rem 0;
   }
 }
 
 .is-visible {
   transform: translateX(0%);
+}
+
+.active-menu__btn {
+  transform: rotate(45deg);
 }
