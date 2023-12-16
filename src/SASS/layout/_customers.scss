@@ -1,7 +1,7 @@
 .customers {
   position: relative;
   // background-color: #FAFBFF;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .customers__title {
@@ -24,16 +24,32 @@
 }
 
 .info-customers__header {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  row-gap: 0.9375rem;
+  margin-bottom: 30px;
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      height: 2px;
+      width: 100%;
+      background-color: #EEE;
+    }
+  }
+
+  @media (min-width: 550px) {
     flex-direction: row;
     justify-content: space-between;
   }
 
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .header-box {
