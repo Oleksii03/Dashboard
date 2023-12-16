@@ -1,5 +1,8 @@
 .mob-menu {
+  display: none;
+
   @media (max-width: 1024px) {
+    display: block;
     width: 270px;
     height: 100vh;
     position: fixed;
@@ -10,24 +13,49 @@
     z-index: 999;
     box-shadow: inset -6px -1px 4px -4px rgba(0, 0, 0, 0.16);
 
-    // transform: translateX(-101%);
+    transform: translateX(-101%);
 
-    &::after {
-      content: '>';
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 20px;
-
-      width: 23px;
-      height: 30px;
-      background-color: rgba(154, 163, 163, 0.432);
+    &__btn {
       position: absolute;
-      top: 15%;
-      right: -23px;
-
+      top: 80px;
+      right: -35px;
+      background-color: #9197b358;
+      width: 35px;
+      height: 35px;
+      padding: 0px;
+      line-height: 0;
       border-radius: 0 50% 50% 0;
+    }
+
+    &__icon {
+      position: relative;
+      width: 25px;
+      height: 2px;
+      background-color: #000000;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 25px;
+        height: 2px;
+        background-color: #000000;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        width: 25px;
+        height: 2px;
+        background-color: #000000;
+      }
+    }
+
+    .is-visible {
+      transform: translateX(0%);
     }
   }
 }
