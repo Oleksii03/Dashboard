@@ -183,20 +183,31 @@
   display: flex;
 
   &__text {
-    color: #B5B7C0;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.14px;
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      color: #B5B7C0;
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.14px;
+    }
   }
 }
 
 .footer-btn__list {
   margin-left: auto;
+  margin-right: auto;
   display: flex;
   column-gap: 0.75rem;
+
+  @media (min-width: 768px) {
+    margin-right: 0;
+    margin-left: auto;
+  }
 }
 
 .footer-btn__link {
