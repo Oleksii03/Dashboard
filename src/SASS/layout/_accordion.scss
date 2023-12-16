@@ -1,0 +1,38 @@
+.accordion {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.accordion-header {
+  padding: 10px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+  color: #f5f5f5;
+}
+
+.accordion-header.active .icon {
+  transform: rotate(45deg);
+}

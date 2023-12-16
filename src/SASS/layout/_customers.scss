@@ -84,10 +84,15 @@
 // ------body--------------------------
 
 .info-customers__body {
-  overflow-x: hidden;
-  padding-top: 2.5rem;
-  display: flex;
-  justify-content: space-between;
+  display: none;
+
+  @media (min-width: 768px) {
+    overflow-x: hidden;
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 
 .info-customers__list {
